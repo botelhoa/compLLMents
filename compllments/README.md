@@ -1,4 +1,4 @@
-# compLLMents>
+# compLLMents
 
 ## Description
 
@@ -26,11 +26,13 @@ poe install-pytorch
 ```
 
 To download files to store locally and save time of future downloads, run:
+
 ```
 download -m path/on/huggingface
 ```
 
 To send SMS messages, first create a free [Twilio](https://www.twilio.com/en-us) account and create a phone number (note: Twilio automatically prepends the message `Sent from your Twilio trial account` to free-tier accounts). Copy your credentials from the dashboard into the `TWILIO_CONFIG` dictionary in `config.py`. An example config will look like:
+
 ```
  {
     "account_sid": "a_string",
