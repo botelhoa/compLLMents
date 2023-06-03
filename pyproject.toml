@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "compllments"
-version = "0.1.0"
+version = "0.1.1"
 description = "Send nice texts to your friends using LLMs"
 authors = ["Austin Botelho <austinbotelho@nyu.edu>"]
 readme = "README.md"
