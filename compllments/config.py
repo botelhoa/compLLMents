@@ -1,7 +1,7 @@
 
 INFERENCE_CONFIG = {
         "model": "mosaicml/mpt-7b-instruct", # Path to HF model, use "text-davinci-003" with OpenAI
-        "tokenizer": "google/flan-t5-large", #"EleutherAI/gpt-neox-20b", # Path to HF tokenizer
+        "tokenizer": "EleutherAI/gpt-neox-20b", # Path to HF tokenizer
         'max_new_tokens': 100,
         'min_new_tokens': 20,
         "num_examples": 20,
