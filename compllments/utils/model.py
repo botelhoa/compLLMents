@@ -23,9 +23,8 @@ class Prompter:
 
 
 class Selector:
-    def __init__(self, low_memory_mode: bool) -> None:
+    def __init__(self,) -> None:
 
-        self.low_memory_mode = low_memory_mode
         self.model = pipeline(
                 "sentiment-analysis",
                 model="cardiffnlp/xlm-roberta-base-sentiment-multilingual",
@@ -81,8 +80,6 @@ class Writer:
                     trust_remote_code=True,
                     #device_map='auto',
                 )
-
-
 
 
             self.pipe = pipeline(

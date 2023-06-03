@@ -40,7 +40,7 @@ def cli(recipient: str, sender: str, number: str, language: str, select_best: bo
     if select_best == False:
         INFERENCE_CONFIG["num_examples"] == 1
 
-    # Instatiate helper objects
+    # Instantiate helper objects
     text_generator = Writer(config=INFERENCE_CONFIG, template=TEMPLATE)
     text_sender = Texter(message_type=message_type)
 
@@ -51,7 +51,7 @@ def cli(recipient: str, sender: str, number: str, language: str, select_best: bo
 
     # Select message
     if select_best == True:
-        text_selector = Selector(low_memory_mode=False)
+        text_selector = Selector()
         message_dict  = text_selector.select(messages)
         print(f"The most positive message had a score of {message_dict['score']}")
         message = message_dict["text"]
