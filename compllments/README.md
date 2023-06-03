@@ -1,10 +1,13 @@
 # compLLMents
 
+<!-- ![GitHub all releases](https://img.shields.io/github/downloads/botelhoa/compLLMents/total?style=plastic)
+![MIT License](https://img.shields.io/bower/l/compLLMents?style=plastic) -->
+
 ## Description
 
-This package enables you to send scheduled, uplifting, AI-generated text messages to yourself and your friends. 
+This package enables you to send scheduled, uplifting, AI-generated text messages to your friends. 
 
-It works by first using am LLM to generate a batch of positive and complimentary messages in the language of choice. Then, a multilingual sentiment classifier scores all the generated posts and selects the most positive to send either as an SMS or over WhatsApp.
+It works by first using an LLM to generate a batch of positive and complimentary messages in the language of your choice. Then, a multilingual sentiment classifier scores all the generated posts and selects the most positive to send either as an SMS or over WhatsApp. [Here](https://colab.research.google.com/drive/1gfTlCWNFgpHdvLR5g8o-OV_a30Pfps60?usp=sharing) is the accompanying Colab notebook.
 
 
 DISCLAIMER: If someone you know is suffering from mental health difficulties, please reach out person-to-person or encourage them to seek professional *human* help instead of from chatbots. [Here](https://www.nimh.nih.gov/health/find-help) is one good resource of many.
