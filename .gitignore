@@ -154,3 +154,8 @@ cython_debug/
 
 # Additional
 **PyWhatKit_DB.txt
+
+# Custom
+personal_audio_files/
+**combined_personal_audio.wav
+**personal_audio_metadata.txt

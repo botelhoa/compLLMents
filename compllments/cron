@@ -22,5 +22,4 @@
 #
 # m h  dom mon dow   command
 SHELL=/bin/bash
-# Spend estimations
-0 8 * * * send -r "First Last" -s "First Last" -n "+1234567890" -l "english" -b -t "sms"
+0 8 * * * send -r "First Last" -s "First Last" -n "+1234567890" -l "english" -b -t "sms" -sa
