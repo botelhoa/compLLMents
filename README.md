@@ -7,7 +7,7 @@
 
 This package enables you to send scheduled, uplifting, multi-modal AI-generated text messages to your friends. (Though they won't remain friends long if your only communicate is automated 😉)
 
-It works by first using an LLM to generate a batch of positive and complimentary messages in the language of your choice. Then, a multilingual sentiment classifier scores all the generated posts and selects the most positive to send either as an SMS or over WhatsApp. Further, after recording a few minutes of audio, a custom text-to-speech model will record the message in your voice.[Here](https://colab.research.google.com/drive/1gfTlCWNFgpHdvLR5g8o-OV_a30Pfps60?usp=sharing) is the accompanying Colab notebook.
+It works by first using an LLM to generate a batch of positive and complimentary messages in the language of your choice. Then, a multilingual sentiment classifier scores all the generated posts and selects the most positive to send either as an SMS or over WhatsApp. Further, after recording a few minutes of audio, a custom text-to-speech model will record the message in your voice. [Here](https://colab.research.google.com/drive/1gfTlCWNFgpHdvLR5g8o-OV_a30Pfps60?usp=sharing) is the accompanying Colab notebook.
 
 
 ## Table of Contents
@@ -47,7 +47,7 @@ You must log in from your computer for the messages to send.
 
 
 ### Audio
-Training a custom test-to-speech (TTS) model requires a corpus of recordings to fine tine on. The (Mozilla Common Voice)[https://commonvoice.mozilla.org/en?gclid=CjwKCAjwm4ukBhAuEiwA0zQxkwxZgF6SdsfkM8xrx5o7eayEqRS2CVbM2YnIJDUIb0VGqzSrMnBUphoC67kQAvD_BwE] initiative is a crowdsourced voice dataset. After creating an account, you can record yourself speaking sentences in the language of your choosing. Once finished recording, go to `Profile` >> `Download My Data` and copy the URLs you see into the `MOZILLA_CONFIG` dictionary in `config.py` like below:
+Training a custom test-to-speech (TTS) model requires a corpus of recordings to fine tine on. The [Mozilla Common Voice](https://commonvoice.mozilla.org/en?gclid=CjwKCAjwm4ukBhAuEiwA0zQxkwxZgF6SdsfkM8xrx5o7eayEqRS2CVbM2YnIJDUIb0VGqzSrMnBUphoC67kQAvD_BwE) initiative is a crowdsourced voice dataset. After creating an account, you can record yourself speaking sentences in the language of your choosing. Once finished recording, go to `Profile` >> `Download My Data` and copy the URLs you see into the `MOZILLA_CONFIG` dictionary in `config.py` like below:
 
 ```
 MOZILLA_CONFIG = {
